@@ -1,5 +1,3 @@
-import json
-
 from bs4 import BeautifulSoup
 from SaveMongo import save
 import requests
@@ -35,25 +33,28 @@ def ww_bdtd(query, query_type="0", query_date="0"):
     # Parse the HTML content of the response using BeautifulSoup
     soup = BeautifulSoup(response.content, 'html.parser')
 
-    # Parse the JSON data from the response
-    data = response.json()
-
-    # Extract the list of records from the JSON data
-    records = data.get("records", [])
-
-    # Create an empty list to store the adapted records
-    adapted_records = []
-
-    # Loop through each original record and adapt it
-    for record in records:
-        adapted_record = adapt_record(record)
-        adapted_records.append(adapted_record)
-
     # Use regular expression to find and extract the total number of results
     total = re.search(r'\d+', response.text)
 
-    # Call the function to save the data to MongoDB
-    save(adapted_records, query, query_date, total.group(), "bdtd")
+    if total.group() != "0":
+        # Parse the JSON data from the response
+        data = response.json()
+
+        # Extract the list of records from the JSON data
+        records = data.get("records", [])
+
+        # Create an empty list to store the adapted records
+        adapted_records = []
+
+        # Loop through each original record and adapt it
+        for record in records:
+            adapted_record = adapt_record(record)
+            adapted_records.append(adapted_record)
+
+        # Call the function to save the data to MongoDB
+        save(adapted_records, query, query_date, total.group(), "bdtd")
+    else:
+        print("Nenhum resultado no BDTD para a consulta em questão.")
 
 
 # Function to adapt individual 'record' elements from JSON to a dictionary

@@ -37,23 +37,26 @@ def ww_els(query, query_type="0", query_date="0"):
     # Parse the XML response using BeautifulSoup
     soup = BeautifulSoup(response.content, "xml")
 
-    # Convert XML to JSON
-    entries = soup.find_all("atom:entry")
-
-    # Create an empty list to store the adapted entries
-    adapted_entries = []
-
-    # Loop through each original entry and adapt it
-    for entry in entries:
-        adapted_entry = adapt_entry(entry)
-        adapted_entries.append(adapted_entry)
-
     # Find the 'opensearch:totalResults' element in the 'soup' object and extract its numeric content
     # The result is stored in the 'total' variable as a string of digits
     total = "".join(filter(str.isdigit, soup.find("opensearch:totalResults")))
 
-    # Call the function to save the data to MongoDB
-    save(adapted_entries, query, query_date, total, "els")
+    if total != "0":
+        # Convert XML to JSON
+        entries = soup.find_all("atom:entry")
+
+        # Create an empty list to store the adapted entries
+        adapted_entries = []
+
+        # Loop through each original entry and adapt it
+        for entry in entries:
+            adapted_entry = adapt_entry(entry)
+            adapted_entries.append(adapted_entry)
+
+        # Call the function to save the data to MongoDB
+        save(adapted_entries, query, query_date, total, "els")
+    else:
+        print("Nenhum resultado no SCOPUS para a consulta em questão.")
 
 
 # Function to adapt individual 'entry' elements from JSON to a dictionary
@@ -68,7 +71,7 @@ def adapt_entry(entry):
     # Create an adapted entry dictionary with selected fields
     adapted_entry = {
         "title": entry.find("dc:title").text,
-        "authors": entry.find("dc:creator").text,
+        "authors": entry.find("dc:creator").text if entry.find("dc:creator") else "N/A",
         "originalId": entry.find("dc:identifier").text,
         "url": entry.find("prism:url").text,
         "doi": entry.find("prism:doi").text if entry.find("prism:doi") else "N/A",

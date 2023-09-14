@@ -3,7 +3,7 @@ from WebWeaverELS import ww_els
 from WebWeaverBDTD import ww_bdtd
 
 
-def webweaver(db, query, query_type="0", query_date="0"):
+def webweaver(db, query, query_type, query_date):
     if db == 1:
         ww_wos(query, query_type, query_date)
     elif db == 2:
@@ -16,5 +16,5 @@ def webweaver(db, query, query_type="0", query_date="0"):
         ww_bdtd(query, query_type, query_date)
 
 
-query = "data"
-webweaver(3, query,  "0", "2023")
+query = "efhjqpifhjq9iofq"
+webweaver(0, query, "0", "0")

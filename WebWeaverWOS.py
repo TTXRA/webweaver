@@ -36,25 +36,28 @@ def ww_wos(query, query_type="0", query_date="0"):
     # Send an HTTP GET request to the API
     response = requests.get(url, headers=headers)
 
-    # Parse the JSON data from the response
-    data = response.json()
-
-    # Extract the list of hits from the data
-    hits = data.get("hits", [])
-
-    # Create an empty list to store the adapted hits
-    adapted_hits = []
-
-    # Loop through each original hit and adapt it
-    for hit in hits:
-        adapted_hit = adapt_hit(hit)
-        adapted_hits.append(adapted_hit)
-
     # Use regular expression to search for the first sequence of digits (numbers) in the response text
     total = re.search(r'\d+', response.text)
 
-    # Call the function to save the data to MongoDB
-    save(adapted_hits, query, query_date, total.group(), "wos")
+    if total.group() != "0":
+        # Parse the JSON data from the response
+        data = response.json()
+
+        # Extract the list of hits from the data
+        hits = data.get("hits", [])
+
+        # Create an empty list to store the adapted hits
+        adapted_hits = []
+
+        # Loop through each original hit and adapt it
+        for hit in hits:
+            adapted_hit = adapt_hit(hit)
+            adapted_hits.append(adapted_hit)
+
+        # Call the function to save the data to MongoDB
+        save(adapted_hits, query, query_date, total.group(), "wos")
+    else:
+        print("Nenhum resultado no Web of Science para a consulta em questão.")
 
 
 # Function to adapt individual 'hit' elements from JSON to a dictionary
@@ -68,10 +71,16 @@ def adapt_hit(hit):
     else:
         date = str(publish_year)
 
+    # Initialize the 'authors' variable as an empty string
+    authors = ""
+    if "names" in hit and "authors" in hit["names"]:
+        # Check if the 'authors' key exists in 'hit["names"]'
+        authors = "; ".join(author["wosStandard"] for author in hit["names"]["authors"])
+
     # Create an adapted hit dictionary with selected fields
     adapted_hit = {
         "title": hit["title"],
-        "authors": "; ".join(author["wosStandard"] for author in hit["names"]["authors"]),
+        "authors": authors,
         "originalId": hit["uid"],
         "url": hit["links"]["record"],
         "doi": hit["identifiers"].get("doi", "N/A"),
