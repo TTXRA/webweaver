@@ -60,7 +60,7 @@ def ww_bdtd(query, query_type="0", query_date="0"):
 # Function to adapt individual 'record' elements from JSON to a dictionary
 def adapt_record(record):
     advisor_key = record.get("contributors", {}).get("advisor")
-    advisor = list(advisor_key.keys())[0] if advisor_key else "N/A"
+    advisor = list(advisor_key.keys())[0].title() if advisor_key else ""
     institutions = ", ".join(record["institutions"])
     department = ", ".join(record.get("departments", []))
 
@@ -72,14 +72,14 @@ def adapt_record(record):
 
     # Create an adapted record dictionary with selected fields
     adapted_record = {
-        "title": record["title"],
-        "authors": "; ".join(author for author in record["authors"]["primary"]),
+        "title": record["title"].upper(),
+        "authors": "; ".join(author.rstrip('.').title() for author in record["authors"]["primary"]),
         "originalId": record["id"],
         "url": record["urls"][0] if record["urls"] else "N/A",
-        "date": record["publicationDates"][0] if record["publicationDates"] else "N/A",
-        "type": ", ".join(typ for typ in record["types"]),
-        "keywords": "; ".join(subject[0].replace(";", "") for subject in record.get("subjectsPOR", [])),
-        "advisor": advisor,
+        "date": record["publicationDates"][0] if record["publicationDates"] else "",
         "institutions": combined_institution,
+        "advisor": advisor,
+        "type": ", ".join(typ for typ in record["types"]),
+        "keywords": "; ".join(subject[0].replace(";", "").lower() for subject in record.get("subjectsPOR", [])),
     }
     return adapted_record

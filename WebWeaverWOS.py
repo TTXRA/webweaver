@@ -67,7 +67,7 @@ def adapt_hit(hit):
 
     if publish_month is not None:
         # Create a formatted date string with year and capitalized month
-        date = f"{publish_year}, {publish_month.capitalize()}"
+        date = f"{publish_month} {publish_year}"
     else:
         date = str(publish_year)
 
@@ -79,17 +79,17 @@ def adapt_hit(hit):
 
     # Create an adapted hit dictionary with selected fields
     adapted_hit = {
-        "title": hit["title"],
+        "title": hit["title"].upper(),
         "authors": authors,
         "originalId": hit["uid"],
         "url": hit["links"]["record"],
-        "doi": hit["identifiers"].get("doi", "N/A"),
-        "issn": hit["identifiers"].get("issn", "N/A"),
+        "doi": hit["identifiers"].get("doi", ""),
+        "issn": hit["identifiers"].get("issn", ""),
         "date": date,
         "source": hit["source"]["sourceTitle"],
-        "volume": hit["source"].get("volume", "N/A"),
-        "pageRange": hit["source"]["pages"].get("range", "N/A"),
+        "volume": hit["source"].get("volume", ""),
+        "pageRange": hit["source"]["pages"].get("range", ""),
         "type": ", ".join(hit["types"]),
-        "keywords": "; ".join(keyword for keyword in hit["keywords"].get("authorKeywords", [])),
+        "keywords": "; ".join(keyword.lower() for keyword in hit["keywords"].get("authorKeywords", [])),
     }
     return adapted_hit

@@ -66,20 +66,20 @@ def adapt_entry(entry):
     affiliation_city = entry.find("atom:affiliation-city").text if entry.find("atom:affiliation-city") else ""
     affiliation_country = entry.find("atom:affiliation-country").text if entry.find("affiliation-country") else ""
 
-    affiliation = f"{affilname}, {affiliation_city}, {affiliation_country}" if entry.find("atom:affiliation") else "N/A"
+    affiliation = f"{affilname}, {affiliation_city}, {affiliation_country}" if entry.find("atom:affiliation") else ""
 
     # Create an adapted entry dictionary with selected fields
     adapted_entry = {
-        "title": entry.find("dc:title").text,
-        "authors": entry.find("dc:creator").text if entry.find("dc:creator") else "N/A",
+        "title": entry.find("dc:title").text.upper(),
+        "authors": entry.find("dc:creator").text if entry.find("dc:creator") else "",
         "originalId": entry.find("dc:identifier").text,
         "url": entry.find("prism:url").text,
-        "doi": entry.find("prism:doi").text if entry.find("prism:doi") else "N/A",
-        "issn": entry.find("prism:issn").text if entry.find("prism:issn") else "N/A",
+        "doi": entry.find("prism:doi").text if entry.find("prism:doi") else "",
+        "issn": entry.find("prism:issn").text if entry.find("prism:issn") else "",
         "date": entry.find("prism:coverDisplayDate").text,
         "source": entry.find("prism:publicationName").text,
-        "volume": entry.find("prism:volume").text if entry.find("prism:volume") else "N/A",
-        "pageRange": entry.find("prism:pageRange").text if entry.find("prism:pageRange") else "N/A",
+        "volume": entry.find("prism:volume").text if entry.find("prism:volume") else "",
+        "pageRange": entry.find("prism:pageRange").text if entry.find("prism:pageRange") else "",
         "type": entry.find("atom:subtypeDescription").text,
         "affiliation": affiliation,
     }

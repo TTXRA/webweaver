@@ -16,5 +16,5 @@ def webweaver(db, query, query_type, query_date):
         ww_bdtd(query, query_type, query_date)
 
 
-query = "efhjqpifhjq9iofq"
-webweaver(0, query, "0", "0")
+query = "data"
+webweaver(0, query, "0", "1907")
