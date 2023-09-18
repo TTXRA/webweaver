@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebWeaver Data</title>
+    <!-- Include CSS for styling the cards (you may need to customize this) -->
+    <style>
+        .card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>WebWeaver Data</h1>
+    <!-- Loop through each item in 'data' and display it in a card -->
+    {% for item in data %}
+    <div class="card">
+        <h3>{{ item.title }}</h3>
+        <p>Authors: {{ item.authors }}</p>
+        <p>Date: {{ item.date }}</p>
+        <!-- Add more fields as needed -->
+    </div>
+    {% endfor %}
+</body>
+</html>

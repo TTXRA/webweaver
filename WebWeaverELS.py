@@ -3,7 +3,7 @@ from SaveMongo import save
 import requests
 
 
-def ww_els(query, query_type="0", query_date="0"):
+def ww_els(query, query_type, query_date):
     # Replace spaces in the 'query' string with '+' to create a URL-friendly format
     query = query.replace(' ', '+')
 
@@ -26,7 +26,7 @@ def ww_els(query, query_type="0", query_date="0"):
     }
 
     # Construct the API URL with the query parameter
-    if query_date != "0":
+    if query_date != "":
         api_url = f"https://api.elsevier.com/content/search/scopus?query={query_type}({query})&date={query_date}"
     else:
         api_url = f"https://api.elsevier.com/content/search/scopus?query={query_type}({query})"

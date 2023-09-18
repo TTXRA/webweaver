@@ -9,13 +9,13 @@ def save(data_list, query, query_date, total, database):
     db = client['webweaver']
 
     # Select or create a collection
-    collection = db[f'{query}_{query_date}_{database}']
+    if query_date != "":
+        collection = db[f'{query}_{query_date}_{database}']
+    else:
+        collection = db[f'{query}_{database}']
 
     # Insert the data into MongoDB
     result = collection.insert_many(data_list)
-
-    # Print the inserted document IDs
-    print("Inserted IDs:", result.inserted_ids)
 
     # Check the value of the 'database' variable to determine the repository
     if database == 'els':

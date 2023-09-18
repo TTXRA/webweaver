@@ -4,7 +4,7 @@ import requests
 import re
 
 
-def ww_bdtd(query, query_type="0", query_date="0"):
+def ww_bdtd(query, query_type, query_date):
     # Replace spaces in the query with '+' to create a valid URL parameter
     query = query.replace(' ', '+')
 
@@ -22,7 +22,7 @@ def ww_bdtd(query, query_type="0", query_date="0"):
     limit = 25
 
     # Construct the API URL with the query and limit parameters
-    if query_date != "0":
+    if query_date != "":
         url = f"https://bdtd.ibict.br/vufind/api/v1/search?filter%5B%5D=publishDate%3A%22%5B{query_date}+TO+{query_date}%5D%22&join=AND&bool0%5B%5D=AND&lookfor0%5B%5D={query}&type0%5B%5D={query_type}&limit={limit}&file=true"
     else:
         url = f"https://bdtd.ibict.br/vufind/api/v1/search?lookfor={query}&type={query_type}&limit={limit}&file=true"

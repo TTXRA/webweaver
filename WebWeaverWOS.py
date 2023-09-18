@@ -3,7 +3,7 @@ import requests
 import re
 
 
-def ww_wos(query, query_type="0", query_date="0"):
+def ww_wos(query, query_type, query_date):
     # Replace spaces in the 'query' string with '+' to create a URL-friendly format
     query = query.replace(' ', '+')
 
@@ -23,7 +23,7 @@ def ww_wos(query, query_type="0", query_date="0"):
     page = 1
 
     # Construct the API URL with the query, limit, and page parameters
-    if query_date != "0":
+    if query_date != "":
         url = f"https://api.clarivate.com/apis/wos-starter/v1/documents?db=WOS&q=PY%3D{query_date}%20AND%20{query_type}%3D{query}&limit={limit}&page={page}"
     else:
         url = f"https://api.clarivate.com/apis/wos-starter/v1/documents?db=WOS&q={query_type}%3D{query}&limit={limit}&page={page}"
