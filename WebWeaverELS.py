@@ -3,7 +3,7 @@ from SaveMongo import save
 import requests
 
 
-def ww_els(query, query_type, query_date):
+def ww_els(query, query_type, query_date, query_id):
     # Replace spaces in the 'query' string with '+' to create a URL-friendly format
     query = query.replace(' ', '+')
 
@@ -54,7 +54,7 @@ def ww_els(query, query_type, query_date):
             adapted_entries.append(adapted_entry)
 
         # Call the function to save the data to MongoDB
-        save(adapted_entries, query, query_date, total, "els")
+        save(adapted_entries, query, query_date, query_id, total, "els")
     else:
         print("Nenhum resultado no SCOPUS para a consulta em questão.")
 

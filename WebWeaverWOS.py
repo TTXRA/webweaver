@@ -3,7 +3,7 @@ import requests
 import re
 
 
-def ww_wos(query, query_type, query_date):
+def ww_wos(query, query_type, query_date, query_id):
     # Replace spaces in the 'query' string with '+' to create a URL-friendly format
     query = query.replace(' ', '+')
 
@@ -55,7 +55,7 @@ def ww_wos(query, query_type, query_date):
             adapted_hits.append(adapted_hit)
 
         # Call the function to save the data to MongoDB
-        save(adapted_hits, query, query_date, total.group(), "wos")
+        save(adapted_hits, query, query_date, query_id, total.group(), "wos")
     else:
         print("Nenhum resultado no Web of Science para a consulta em questão.")
 

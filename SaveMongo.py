@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 
 
-def save(data_list, query, query_date, total, database):
+def save(data_list, query, query_date, query_id, total, database):
     # Connect to MongoDB
     client = MongoClient('mongodb://localhost:27017/')
 
@@ -10,9 +10,9 @@ def save(data_list, query, query_date, total, database):
 
     # Select or create a collection
     if query_date != "":
-        collection = db[f'{query}_{query_date}_{database}']
+        collection = db[f'{query}_{query_date}_{database}_{query_id}']
     else:
-        collection = db[f'{query}_{database}']
+        collection = db[f'{query}_{database}_{query_id}']
 
     # Insert the data into MongoDB
     result = collection.insert_many(data_list)

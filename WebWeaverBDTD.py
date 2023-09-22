@@ -4,7 +4,7 @@ import requests
 import re
 
 
-def ww_bdtd(query, query_type, query_date):
+def ww_bdtd(query, query_type, query_date, query_id):
     # Replace spaces in the query with '+' to create a valid URL parameter
     query = query.replace(' ', '+')
 
@@ -52,7 +52,7 @@ def ww_bdtd(query, query_type, query_date):
             adapted_records.append(adapted_record)
 
         # Call the function to save the data to MongoDB
-        save(adapted_records, query, query_date, total.group(), "bdtd")
+        save(adapted_records, query, query_date, query_id, total.group(), "bdtd")
     else:
         print("Nenhum resultado no BDTD para a consulta em questão.")
 
