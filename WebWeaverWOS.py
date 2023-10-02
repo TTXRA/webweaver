@@ -59,6 +59,8 @@ def ww_wos(query, query_type, query_date, query_id):
     else:
         print("Nenhum resultado no Web of Science para a consulta em questão.")
 
+    return total.group()
+
 
 # Function to adapt individual 'hit' elements from JSON to a dictionary
 def adapt_hit(hit):
@@ -80,16 +82,17 @@ def adapt_hit(hit):
     # Create an adapted hit dictionary with selected fields
     adapted_hit = {
         "title": hit["title"].upper(),
-        "authors": authors,
-        "originalId": hit["uid"],
-        "url": hit["links"]["record"],
-        "doi": hit["identifiers"].get("doi", ""),
-        "issn": hit["identifiers"].get("issn", ""),
-        "date": date,
-        "source": hit["source"]["sourceTitle"],
-        "volume": hit["source"].get("volume", ""),
-        "pageRange": hit["source"]["pages"].get("range", ""),
-        "type": ", ".join(hit["types"]),
-        "keywords": "; ".join(keyword.lower() for keyword in hit["keywords"].get("authorKeywords", [])),
+        "authors": authors.upper(),
+        "database": "WEB OF SCIENCE",
+        "originalId": hit["uid"].upper(),
+        "url": hit["links"]["record"].upper(),
+        "doi": hit["identifiers"].get("doi", "N/A").upper(),
+        "issn": hit["identifiers"].get("issn", "N/A").upper(),
+        "date": date.upper(),
+        "source": hit["source"]["sourceTitle"].upper(),
+        "volume": hit["source"].get("volume", "N/A").upper(),
+        "pageRange": hit["source"]["pages"].get("range", "N/A").upper(),
+        "type": ", ".join(hit["types"]).upper(),
+        "keywords": "; ".join(keyword.upper() for keyword in hit["keywords"].get("authorKeywords", ["N/A"]))
     }
     return adapted_hit

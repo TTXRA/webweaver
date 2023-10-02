@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Data - WebWeaver</title>
-    <meta property="og:title" content="Data - WebWeaver" />
+    <title>WebWeaver</title>
+    <meta property="og:title" content="WebWeaver" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -41,23 +41,27 @@
 
       <div class="data-container">
         <header data-role="Header" class="data-header">
-          <img
-            alt="logo"
-            src="../static/public/imagem_2023-09-10_014638274-1400w.png"
-            class="data-image"
-          />
+          <a href="/" class="home-navlink">
+            <img
+              alt="logo"
+              src="../static/public/imagem_2023-09-10_014638274-1400w.png"
+              class="data-image"
+            />
+          </a>
           <div class="data-nav">
             <nav class="navigation-links-nav navigation-links-root-class-name8">
-              <span class="navigation-links-text"><span>Sobre</span></span>
-              <span class="navigation-links-text1">
+              <a href="/sobre" class="navigation-links-navlink">
+                <span>Sobre</span>
+              </a>
+              <a href="/repositrios" class="navigation-links-navlink1">
                 <span>Repositórios</span>
-              </span>
-              <span class="navigation-links-text2">
+              </a>
+              <a href="/tecnologias" class="navigation-links-navlink2">
                 <span>Tecnologias</span>
-              </span>
-              <span class="navigation-links-text3">
+              </a>
+              <a href="/termos" class="navigation-links-navlink3">
                 <span>Termos e Condições</span>
-              </span>
+              </a>
             </nav>
           </div>
           <div data-role="BurgerMenu" class="data-burger-menu">
@@ -86,16 +90,18 @@
               <nav
                 class="navigation-links-nav navigation-links-root-class-name9"
               >
-                <span class="navigation-links-text"><span>Sobre</span></span>
-                <span class="navigation-links-text1">
+                <a href="sobre.html" class="navigation-links-navlink">
+                  <span>Sobre</span>
+                </a>
+                <a href="repositrios.html" class="navigation-links-navlink1">
                   <span>Repositórios</span>
-                </span>
-                <span class="navigation-links-text2">
+                </a>
+                <a href="tecnologias.html" class="navigation-links-navlink2">
                   <span>Tecnologias</span>
-                </span>
-                <span class="navigation-links-text3">
+                </a>
+                <a href="termos.html" class="navigation-links-navlink3">
                   <span>Termos e Condições</span>
-                </span>
+                </a>
               </nav>
             </div>
             <div>
@@ -115,6 +121,19 @@
             </div>
           </div>
         </header>
+         <div class="data-banner">
+          <h2 class="data-text">
+            <span>
+              <span>
+                Exibindo {{ data_length }} itens de um total de {{ total }} resultado(s).
+              </span>
+            </span>
+            <br />
+            <span>ID da Consulta: {{query_id}} </span>
+          </h2>
+           <div id="token" data-token="{{ token }}" style="display: block;"></div>
+          <button id="downloadButton" class="data-button button">Baixar Consulta</button>
+        </div>
         <div class="data-container2">
           <div class="data-container3">
             <div class="data-blog">
@@ -124,19 +143,167 @@
                   <div class="blog-post-card-container">
                     <div class="blog-post-card-container1">
                       <span class="blog-post-card-text">
-                        <span>{{ item.title }}</span>
+                        <span>{{ item.authors }}</span>
                       </span>
                     </div>
-                    <h1 class="blog-post-card-text1">
-                      <span>{{ item.title }}</span>
-                    </h1>
+                    <input type="hidden" class="itemDatabase" value="{{ item.database }}">
+                    <h2 class="blog-post-card-text1">
+                      <a href="{{ item.url }}" target="_blank">{{ item.title }}</a>
+                    </h2>
                     <span class="blog-post-card-text2">
-                      <span>{{ item.date }}</span>
+                      <!-- Set of spans for "Web of Science" -->
+                      <span class="wosSpans" style="display: none;">
+                        <table>
+                          <tr>
+                            <td class="left-column">DATA DE PUBLICAÇÃO:</td>
+                            <td>{{ item.date }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">REPOSITÓRIO:</td>
+                            <td>{{ item.database }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">ID ORIGINAL:</td>
+                            <td>{{ item.originalId }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">DOI:</td>
+                            <td>{{ item.doi }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">ISSN:</td>
+                            <td>{{ item.issn }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">FONTE:</td>
+                            <td>{{ item.source }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">VOLUME:</td>
+                            <td>{{ item.volume }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">PÁGINAS:</td>
+                            <td>{{ item.pageRange }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">CATEGORIA:</td>
+                            <td>{{ item.type }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">PALAVRAS-CHAVE:</td>
+                            <td>{{ item.keywords }}</td>
+                          </tr>
+                        </table>
+                        <div class="blog-post-card-container2">
+                          <img
+                            alt="wos-logo"
+                            src="../static/public/wos-logo.png"
+                            class="blog-post-card-image"
+                            style="display: block;"
+                          />
+                        </div>
+                      </span>
+                      <!-- Set of spans for "Scopus" -->
+                      <span class="elsSpans" style="display: none;">
+                        <table>
+                          <tr>
+                            <td class="left-column">DATA DE PUBLICAÇÃO:</td>
+                            <td>{{ item.date }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">REPOSITÓRIO:</td>
+                            <td>{{ item.database }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">ID ORIGINAL:</td>
+                            <td>{{ item.originalId }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">DOI:</td>
+                            <td>{{ item.doi }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">ISSN:</td>
+                            <td>{{ item.issn }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">FONTE:</td>
+                            <td>{{ item.source }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">VOLUME:</td>
+                            <td>{{ item.volume }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">PÁGINAS:</td>
+                            <td>{{ item.pageRange }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">CATEGORIA:</td>
+                            <td>{{ item.type }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">AFILIAÇÃO:</td>
+                            <td>{{ item.affiliation }}</td>
+                          </tr>
+                        </table>
+                        <div class="blog-post-card-container2">
+                          <img
+                            alt="els-logo"
+                            src="../static/public/els-logo.png"
+                            class="blog-post-card-image"
+                            style="display: block;"
+                          />
+                        </div>
+                      </span>
+                      <!-- Set of spans for "BDTD" -->
+                      <span class="bdtdSpans" style="display: none;">
+                        <table>
+                          <tr>
+                            <td class="left-column">DATA DE PUBLICAÇÃO:</td>
+                            <td>{{ item.date }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">REPOSITÓRIO:</td>
+                            <td>{{ item.database }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">ID ORIGINAL:</td>
+                            <td>{{ item.originalId }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">CATEGORIA:</td>
+                            <td>{{ item.type }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">AFILIAÇÃO:</td>
+                            <td>{{ item.affiliation }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">ORIENTADOR(ES):</td>
+                            <td>{{ item.advisor }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">PALAVRAS-CHAVE:</td>
+                            <td>{{ item.keywords }}</td>
+                          </tr>
+                        </table>
+                        <div class="blog-post-card-container2">
+                          <img
+                            alt="bdtd-logo"
+                            src="../static/public/bdtd-logo.png"
+                            class="blog-post-card-image"
+                            style="display: block;"
+                          />
+                        </div>
+                      </span>
                     </span>
                   </div>
                 </div>
               </div>
               {% endfor %}
+              <script src="../static/js/data.js"></script>
             </div>
           </div>
           <div class="data-container5">
@@ -147,19 +314,167 @@
                   <div class="blog-post-card-container">
                     <div class="blog-post-card-container1">
                       <span class="blog-post-card-text">
-                        <span>{{ item.title }}</span>
+                        <span>{{ item.authors }}</span>
                       </span>
                     </div>
-                    <h1 class="blog-post-card-text1">
-                      <span>{{ item.title }}</span>
-                    </h1>
+                    <input type="hidden" class="itemDatabase" value="{{ item.database }}">
+                    <h2 class="blog-post-card-text1">
+                      <a href="{{ item.url }}" target="_blank">{{ item.title }}</a>
+                    </h2>
                     <span class="blog-post-card-text2">
-                      <span>{{ item.date }}</span>
+                      <!-- Set of spans for "Web of Science" -->
+                      <span class="wosSpans" style="display: none;">
+                        <table>
+                          <tr>
+                            <td class="left-column">DATA DE PUBLICAÇÃO:</td>
+                            <td>{{ item.date }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">REPOSITÓRIO:</td>
+                            <td>{{ item.database }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">ID ORIGINAL:</td>
+                            <td>{{ item.originalId }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">DOI:</td>
+                            <td>{{ item.doi }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">ISSN:</td>
+                            <td>{{ item.issn }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">FONTE:</td>
+                            <td>{{ item.source }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">VOLUME:</td>
+                            <td>{{ item.volume }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">PÁGINAS:</td>
+                            <td>{{ item.pageRange }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">CATEGORIA:</td>
+                            <td>{{ item.type }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">PALAVRAS-CHAVE:</td>
+                            <td>{{ item.keywords }}</td>
+                          </tr>
+                        </table>
+                        <div class="blog-post-card-container2">
+                          <img
+                            alt="wos-logo"
+                            src="../static/public/wos-logo.png"
+                            class="blog-post-card-image"
+                            style="display: block;"
+                          />
+                        </div>
+                      </span>
+                      <!-- Set of spans for "Scopus" -->
+                      <span class="elsSpans" style="display: none;">
+                        <table>
+                          <tr>
+                            <td class="left-column">DATA DE PUBLICAÇÃO:</td>
+                            <td>{{ item.date }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">REPOSITÓRIO:</td>
+                            <td>{{ item.database }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">ID ORIGINAL:</td>
+                            <td>{{ item.originalId }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">DOI:</td>
+                            <td>{{ item.doi }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">ISSN:</td>
+                            <td>{{ item.issn }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">FONTE:</td>
+                            <td>{{ item.source }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">VOLUME:</td>
+                            <td>{{ item.volume }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">PÁGINAS:</td>
+                            <td>{{ item.pageRange }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">CATEGORIA:</td>
+                            <td>{{ item.type }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">AFILIAÇÃO:</td>
+                            <td>{{ item.affiliation }}</td>
+                          </tr>
+                        </table>
+                        <div class="blog-post-card-container2">
+                          <img
+                            alt="els-logo"
+                            src="../static/public/els-logo.png"
+                            class="blog-post-card-image"
+                            style="display: block;"
+                          />
+                        </div>
+                      </span>
+                      <!-- Set of spans for "BDTD" -->
+                      <span class="bdtdSpans" style="display: none;">
+                        <table>
+                          <tr>
+                            <td class="left-column">DATA DE PUBLICAÇÃO:</td>
+                            <td>{{ item.date }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">REPOSITÓRIO:</td>
+                            <td>{{ item.database }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">ID ORIGINAL:</td>
+                            <td>{{ item.originalId }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">CATEGORIA:</td>
+                            <td>{{ item.type }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">AFILIAÇÃO:</td>
+                            <td>{{ item.affiliation }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">ORIENTADOR(ES):</td>
+                            <td>{{ item.advisor }}</td>
+                          </tr>
+                          <tr>
+                            <td class="left-column">PALAVRAS-CHAVE:</td>
+                            <td>{{ item.keywords }}</td>
+                          </tr>
+                        </table>
+                        <div class="blog-post-card-container2">
+                          <img
+                            alt="bdtd-logo"
+                            src="../static/public/bdtd-logo.png"
+                            class="blog-post-card-image"
+                            style="display: block;"
+                          />
+                        </div>
+                      </span>
                     </span>
                   </div>
                 </div>
               </div>
               {% endfor %}
+              <script src="../static/js/data.js"></script>
             </div>
           </div>       
         </div>
@@ -169,8 +484,7 @@
             src="../static/public/imagem_2023-09-10_014638274-1400w.png"
             class="data-image2"
           />
-          <span class="data-text">© 2023 WebWeaver, All Rights Reserved.</span>
-        </footer>
+          <span class="data-text5">© 2023 WebWeaver, All Rights Reserved.</span>
       </div>
     </div>
   </body>
