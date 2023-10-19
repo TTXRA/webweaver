@@ -26,4 +26,4 @@ def save(data_list, query, query_date, query_id, total, database):
         repository = 'DBTD'
 
     # Print a message indicating the number of items inserted
-    # print(f"Inserted {len(data_list)} from {total} {repository} items into MongoDB.")
+    print(f"Inserted {len(data_list)} from {total} {repository} items into MongoDB.")
