@@ -7,16 +7,17 @@ def ww_wos(query, query_type, query_date, query_id):
     # Replace spaces in the 'query' string with '+' to create a URL-friendly format
     query = query.replace(' ', '+')
 
-    # Define a dictionary to map user input to query types
-    query_type_map = {
-        "1": "TI",
-        "2": "AU",
-        "3": "SO",
-        "4": "KEY",
-    }
-
-    # Use dictionary.get() to handle invalid input gracefully
-    query_type = query_type_map.get(query_type, "TS")
+    match query_type:
+        case "1":
+            query_type = "TI"
+        case "2":
+            query_type = "AU"
+        case "3":
+            query_type = "SO"
+        case "4":
+            query_type = "KEY"
+        case _:
+            query_type = "TS"
 
     # Set the number of results to retrieve and the initial page
     limit = 25

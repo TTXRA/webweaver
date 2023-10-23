@@ -18,12 +18,13 @@ def save(data_list, query, query_date, query_id, total, database):
     result = collection.insert_many(data_list)
 
     # Check the value of the 'database' variable to determine the repository
-    if database == 'els':
-        repository = 'Scopus'
-    elif database == 'wos':
-        repository = 'Web of Science'
-    else:
-        repository = 'DBTD'
+    match database:
+        case 'els':
+            repository = 'Scopus'
+        case 'wos':
+            repository = 'Web of Science'
+        case 'bdtd':
+            repository = 'BDTD'
 
     # Print a message indicating the number of items inserted
     print(f"Inserted {len(data_list)} from {total} {repository} items into MongoDB.")

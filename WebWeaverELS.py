@@ -7,16 +7,17 @@ def ww_els(query, query_type, query_date, query_id):
     # Replace spaces in the 'query' string with '+' to create a URL-friendly format
     query = query.replace(' ', '+')
 
-    # Define a dictionary to map user input to query types
-    query_type_map = {
-        "1": "TITLE",
-        "2": "AUTH",
-        "3": "SRCTITLE",
-        "4": "KEY",
-    }
-
-    # Use dictionary.get() to handle invalid input gracefully
-    query_type = query_type_map.get(query_type, "all")
+    match query_type:
+        case "1":
+            query_type = "TITLE"
+        case "2":
+            query_type = "AUTH"
+        case "3":
+            query_type = "SRCTITLE"
+        case "4":
+            query_type = "KEY"
+        case _:
+            query_type = "all"
 
     # Define HTTP request headers with API key and institutional token
     header = {

@@ -8,15 +8,15 @@ def ww_bdtd(query, query_type, query_date, query_id):
     # Replace spaces in the query with '+' to create a valid URL parameter
     query = query.replace(' ', '+')
 
-    # Define a dictionary to map user input to query types
-    query_type_map = {
-        "1": "Title",
-        "2": "Author",
-        "3": "Subject",
-    }
-
-    # Use dictionary.get() to handle invalid input gracefully
-    query_type = query_type_map.get(query_type, "AllFields")
+    match query_type:
+        case "1":
+            query_type = "Title"
+        case "2":
+            query_type = "Author"
+        case "3":
+            query_type = "Subject"
+        case _:
+            query_type = "AllFields"
 
     # Set a limit for the number of results to retrieve
     limit = 25
@@ -54,7 +54,7 @@ def ww_bdtd(query, query_type, query_date, query_id):
         # Call the function to save the data to MongoDB
         save(adapted_records, query, query_date, query_id, total.group(), "bdtd")
     else:
-        print("Nenhum resultado no BDTD para a consulta em questão.")
+        print("Nenhum resultado na BDTD para a consulta em questão.")
 
     return total.group()
 
