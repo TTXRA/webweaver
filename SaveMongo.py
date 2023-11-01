@@ -2,29 +2,32 @@ from pymongo import MongoClient
 
 
 def save(data_list, query, query_date, query_id, total, database):
-    # Connect to MongoDB
+    # Conecta ao MongoDB.
     client = MongoClient('mongodb://localhost:27017/')
 
-    # Select or create a database
+    # Seleciona ou cria um banco de dados.
     db = client['webweaver']
 
-    # Select or create a collection
+    # Seleciona ou cria uma coleção.
     if query_date != "":
         collection = db[f'{query}_{query_date}_{database}_{query_id}']
     else:
         collection = db[f'{query}_{database}_{query_id}']
 
-    # Insert the data into MongoDB
+    # Insere os dados no MongoDB.
     result = collection.insert_many(data_list)
 
-    # Check the value of the 'database' variable to determine the repository
-    match database:
-        case 'els':
-            repository = 'Scopus'
-        case 'wos':
-            repository = 'Web of Science'
-        case 'bdtd':
-            repository = 'BDTD'
+    if result.acknowledged:
+        # Verifica o valor da variável 'database' para identificar o repositório.
+        match database:
+            case 'els':
+                repository = 'Scopus'
+            case 'wos':
+                repository = 'Web of Science'
+            case 'bdtd':
+                repository = 'BDTD'
 
-    # Print a message indicating the number of items inserted
-    print(f"Inserted {len(data_list)} from {total} {repository} items into MongoDB.")
+        # Exibe uma mensagem indicando o número de itens inseridos.
+        print(f"{len(data_list)} de {total} itens disponíveis em {repository} foram inseridos no MongoDB.")
+    else:
+        print(f"Não foi possível inserir os dados no MongoDB.")

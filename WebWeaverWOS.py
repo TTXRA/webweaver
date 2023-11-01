@@ -37,30 +37,36 @@ def ww_wos(query, query_type, query_date, query_id):
     # Send an HTTP GET request to the API
     response = requests.get(url, headers=headers)
 
-    # Use regular expression to search for the first sequence of digits (numbers) in the response text
-    total = re.search(r'\d+', response.text)
+    # Check if the request was successful
+    if response.status_code == 200:
+        # Use regular expression to search for the first sequence of digits (numbers) in the response text
+        total = re.search(r'\d+', response.text)
+        total = total.group()
 
-    if total.group() != "0":
-        # Parse the JSON data from the response
-        data = response.json()
+        if total != "0":
+            # Parse the JSON data from the response
+            data = response.json()
 
-        # Extract the list of hits from the data
-        hits = data.get("hits", [])
+            # Extract the list of hits from the data
+            hits = data.get("hits", [])
 
-        # Create an empty list to store the adapted hits
-        adapted_hits = []
+            # Create an empty list to store the adapted hits
+            adapted_hits = []
 
-        # Loop through each original hit and adapt it
-        for hit in hits:
-            adapted_hit = adapt_hit(hit)
-            adapted_hits.append(adapted_hit)
+            # Loop through each original hit and adapt it
+            for hit in hits:
+                adapted_hit = adapt_hit(hit)
+                adapted_hits.append(adapted_hit)
 
-        # Call the function to save the data to MongoDB
-        save(adapted_hits, query, query_date, query_id, total.group(), "wos")
+            # Call the function to save the data to MongoDB
+            save(adapted_hits, query, query_date, query_id, totalP, "wos")
+        else:
+            print("Nenhum resultado no Web of Science para a consulta em questão.")
     else:
-        print("Nenhum resultado no Web of Science para a consulta em questão.")
+        total = 0
+        print("A requisição enviada à API do Web of Science não foi atendida.")
 
-    return total.group()
+    return total
 
 
 # Function to adapt individual 'hit' elements from JSON to a dictionary

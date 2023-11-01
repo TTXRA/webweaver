@@ -1,0 +1,884 @@
+<?xml version="1.0" ?>
+<atom:search-results xmlns="http://www.w3.org/2005/Atom" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/">
+	<opensearch:totalResults>238235</opensearch:totalResults>
+	<opensearch:startIndex>0</opensearch:startIndex>
+	<opensearch:itemsPerPage>25</opensearch:itemsPerPage>
+	<opensearch:Query role="request" searchTerms="all(web)" startPage="0"/>
+	<atom:link href="https://api.elsevier.com/content/search/scopus?start=0&amp;count=25&amp;query=all%28web%29&amp;date=2019" ref="self" type="application/xml"/>
+	<atom:link href="https://api.elsevier.com/content/search/scopus?start=0&amp;count=25&amp;query=all%28web%29&amp;date=2019" ref="first" type="application/xml"/>
+	<atom:link href="https://api.elsevier.com/content/search/scopus?start=25&amp;count=25&amp;query=all%28web%29&amp;date=2019" ref="next" type="application/xml"/>
+	<atom:link href="https://api.elsevier.com/content/search/scopus?start=4975&amp;count=25&amp;query=all%28web%29&amp;date=2019" ref="last" type="application/xml"/>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85170035602" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85170035602?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85170035602&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85170035602&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85170035602</prism:url>
+		<dc:identifier>SCOPUS_ID:85170035602</dc:identifier>
+		<atom:eid>2-s2.0-85170035602</atom:eid>
+		<dc:title>SPATIAL DATA INFRASTRUCTURES FOR WATER MANAGEMENT. THE CASE OF GUADALQUIVIR RIVER BASIN AUTHORITY</dc:title>
+		<dc:creator>Gonz�lez Rojas D.</dc:creator>
+		<prism:publicationName>GeoFocus</prism:publicationName>
+		<prism:eIssn>15785157</prism:eIssn>
+		<prism:volume>2019</prism:volume>
+		<prism:issueIdentifier>24</prism:issueIdentifier>
+		<prism:pageRange>3-17</prism:pageRange>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<prism:doi>10.21138/GF.548</prism:doi>
+		<atom:citedby-count>0</atom:citedby-count>
+		<atom:affiliation>
+			<atom:affilname>Oficina de Planificaci�n Hidrol�gica Plaza de Espa�a</atom:affilname>
+			<atom:affiliation-city>Sevilla</atom:affiliation-city>
+			<atom:affiliation-country>Spain</atom:affiliation-country>
+		</atom:affiliation>
+		<prism:aggregationType>Journal</prism:aggregationType>
+		<atom:subtype>ar</atom:subtype>
+		<atom:subtypeDescription>Article</atom:subtypeDescription>
+		<atom:source-id>21101176024</atom:source-id>
+		<atom:openaccess>1</atom:openaccess>
+		<atom:openaccessFlag>true</atom:openaccessFlag>
+		<atom:freetoread>
+			<atom:value>all</atom:value>
+			<atom:value>publisherfullgold</atom:value>
+			<atom:value>repository</atom:value>
+			<atom:value>repositoryam</atom:value>
+		</atom:freetoread>
+		<atom:freetoreadLabel>
+			<atom:value>All Open Access</atom:value>
+			<atom:value>Gold</atom:value>
+			<atom:value>Green</atom:value>
+		</atom:freetoreadLabel>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85169154958" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85169154958?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85169154958&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85169154958&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85169154958</prism:url>
+		<dc:identifier>SCOPUS_ID:85169154958</dc:identifier>
+		<atom:eid>2-s2.0-85169154958</atom:eid>
+		<dc:title>The Intermediate Stage and the Guarantee Judge in the Brazilian Criminal Process: an important and insufficient step</dc:title>
+		<dc:creator>Nunes da Silveira M.A.</dc:creator>
+		<prism:publicationName>Law of Justice Journal</prism:publicationName>
+		<prism:issn>14137038</prism:issn>
+		<prism:eIssn>22383212</prism:eIssn>
+		<prism:volume>33</prism:volume>
+		<prism:issueIdentifier>3</prism:issueIdentifier>
+		<prism:pageRange>189-221</prism:pageRange>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<prism:doi>10.5335/rjd.v33i3.10515</prism:doi>
+		<atom:citedby-count>0</atom:citedby-count>
+		<prism:aggregationType>Journal</prism:aggregationType>
+		<atom:subtype>ar</atom:subtype>
+		<atom:subtypeDescription>Article</atom:subtypeDescription>
+		<atom:source-id>21101063732</atom:source-id>
+		<atom:openaccess>1</atom:openaccess>
+		<atom:openaccessFlag>true</atom:openaccessFlag>
+		<atom:freetoread>
+			<atom:value>all</atom:value>
+			<atom:value>publisherfullgold</atom:value>
+		</atom:freetoread>
+		<atom:freetoreadLabel>
+			<atom:value>All Open Access</atom:value>
+			<atom:value>Gold</atom:value>
+		</atom:freetoreadLabel>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85169119042" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85169119042?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85169119042&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85169119042&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85169119042</prism:url>
+		<dc:identifier>SCOPUS_ID:85169119042</dc:identifier>
+		<atom:eid>2-s2.0-85169119042</atom:eid>
+		<dc:title>Citizenship exercised by the right to suffrage in Brazil and Spain</dc:title>
+		<dc:creator>Vidotti M.C.</dc:creator>
+		<prism:publicationName>Law of Justice Journal</prism:publicationName>
+		<prism:issn>14137038</prism:issn>
+		<prism:eIssn>22383212</prism:eIssn>
+		<prism:volume>33</prism:volume>
+		<prism:issueIdentifier>3</prism:issueIdentifier>
+		<prism:pageRange>57-88</prism:pageRange>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<prism:doi>10.5335/rjd.v33i3.10473</prism:doi>
+		<atom:citedby-count>0</atom:citedby-count>
+		<atom:affiliation>
+			<atom:affilname>Universidade de Coimbra</atom:affilname>
+			<atom:affiliation-city>Coimbra</atom:affiliation-city>
+			<atom:affiliation-country>Portugal</atom:affiliation-country>
+		</atom:affiliation>
+		<prism:aggregationType>Journal</prism:aggregationType>
+		<atom:subtype>ar</atom:subtype>
+		<atom:subtypeDescription>Article</atom:subtypeDescription>
+		<atom:source-id>21101063732</atom:source-id>
+		<atom:openaccess>1</atom:openaccess>
+		<atom:openaccessFlag>true</atom:openaccessFlag>
+		<atom:freetoread>
+			<atom:value>all</atom:value>
+			<atom:value>publisherfullgold</atom:value>
+		</atom:freetoread>
+		<atom:freetoreadLabel>
+			<atom:value>All Open Access</atom:value>
+			<atom:value>Gold</atom:value>
+		</atom:freetoreadLabel>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85153782989" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85153782989?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85153782989&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85153782989&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85153782989</prism:url>
+		<dc:identifier>SCOPUS_ID:85153782989</dc:identifier>
+		<atom:eid>2-s2.0-85153782989</atom:eid>
+		<dc:title>Website localization: Asymmetries and terminological challenges</dc:title>
+		<dc:creator>Floros G.</dc:creator>
+		<prism:publicationName>Journal of Internationalization and Localization</prism:publicationName>
+		<prism:issn>20326904</prism:issn>
+		<prism:eIssn>20326912</prism:eIssn>
+		<prism:volume>6</prism:volume>
+		<prism:issueIdentifier>2</prism:issueIdentifier>
+		<prism:pageRange>108-130</prism:pageRange>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<prism:doi>10.1075/jial.19004.cha</prism:doi>
+		<atom:citedby-count>1</atom:citedby-count>
+		<atom:affiliation>
+			<atom:affilname>University of Cyprus</atom:affilname>
+			<atom:affiliation-city>Nicosia</atom:affiliation-city>
+			<atom:affiliation-country>Cyprus</atom:affiliation-country>
+		</atom:affiliation>
+		<prism:aggregationType>Journal</prism:aggregationType>
+		<atom:subtype>ar</atom:subtype>
+		<atom:subtypeDescription>Article</atom:subtypeDescription>
+		<atom:source-id>21101033946</atom:source-id>
+		<atom:openaccess>0</atom:openaccess>
+		<atom:openaccessFlag>false</atom:openaccessFlag>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85153609938" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85153609938?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85153609938&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85153609938&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85153609938</prism:url>
+		<dc:identifier>SCOPUS_ID:85153609938</dc:identifier>
+		<atom:eid>2-s2.0-85153609938</atom:eid>
+		<dc:title>Pandemic, localization and change of guard</dc:title>
+		<dc:creator>O�Hagan M.</dc:creator>
+		<prism:publicationName>Journal of Internationalization and Localization</prism:publicationName>
+		<prism:issn>20326904</prism:issn>
+		<prism:eIssn>20326912</prism:eIssn>
+		<prism:volume>6</prism:volume>
+		<prism:issueIdentifier>2</prism:issueIdentifier>
+		<prism:pageRange>69-85</prism:pageRange>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<prism:doi>10.1075/jial.00013.int</prism:doi>
+		<atom:citedby-count>1</atom:citedby-count>
+		<atom:affiliation>
+			<atom:affilname>The University of Auckland</atom:affilname>
+			<atom:affiliation-city>Auckland</atom:affiliation-city>
+			<atom:affiliation-country>New Zealand</atom:affiliation-country>
+		</atom:affiliation>
+		<prism:aggregationType>Journal</prism:aggregationType>
+		<atom:subtype>ed</atom:subtype>
+		<atom:subtypeDescription>Editorial</atom:subtypeDescription>
+		<atom:source-id>21101033946</atom:source-id>
+		<atom:openaccess>0</atom:openaccess>
+		<atom:openaccessFlag>false</atom:openaccessFlag>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85153592887" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85153592887?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85153592887&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85153592887&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85153592887</prism:url>
+		<dc:identifier>SCOPUS_ID:85153592887</dc:identifier>
+		<atom:eid>2-s2.0-85153592887</atom:eid>
+		<dc:title>Phonological (in)visibility: The perception of reduced Spanish vowels among L1-Spanish speakers, L2-Spanish learners, and English monolinguals</dc:title>
+		<dc:creator>Chappell W.</dc:creator>
+		<prism:publicationName>Journal of Second Language Pronunciation</prism:publicationName>
+		<prism:issn>22151931</prism:issn>
+		<prism:eIssn>2215194X</prism:eIssn>
+		<prism:volume>5</prism:volume>
+		<prism:issueIdentifier>3</prism:issueIdentifier>
+		<prism:pageRange>435-463</prism:pageRange>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<prism:doi>10.1075/jslp.17034.cha</prism:doi>
+		<atom:citedby-count>0</atom:citedby-count>
+		<atom:affiliation>
+			<atom:affilname>The University of Texas at San Antonio</atom:affilname>
+			<atom:affiliation-city>San Antonio</atom:affiliation-city>
+			<atom:affiliation-country>United States</atom:affiliation-country>
+		</atom:affiliation>
+		<prism:aggregationType>Journal</prism:aggregationType>
+		<atom:subtype>ar</atom:subtype>
+		<atom:subtypeDescription>Article</atom:subtypeDescription>
+		<atom:source-id>21101060650</atom:source-id>
+		<atom:openaccess>0</atom:openaccess>
+		<atom:openaccessFlag>false</atom:openaccessFlag>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85151141823" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85151141823?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85151141823&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85151141823&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85151141823</prism:url>
+		<dc:identifier>SCOPUS_ID:85151141823</dc:identifier>
+		<atom:eid>2-s2.0-85151141823</atom:eid>
+		<dc:title>Effectiveness of Self-Management Education based on Information Technology (IT) in Chronic Kidney Disease Patients</dc:title>
+		<dc:creator>Husna I.W.</dc:creator>
+		<prism:publicationName>Jurnal Ners</prism:publicationName>
+		<prism:issn>18583598</prism:issn>
+		<prism:eIssn>25025791</prism:eIssn>
+		<prism:volume>14</prism:volume>
+		<prism:issueIdentifier>3 Special Issue</prism:issueIdentifier>
+		<prism:pageRange>397-401</prism:pageRange>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<prism:doi>10.20473/jn.v14i3(si).17180</prism:doi>
+		<atom:citedby-count>0</atom:citedby-count>
+		<atom:affiliation>
+			<atom:affilname>Universitas Airlangga</atom:affilname>
+			<atom:affiliation-city>Surabaya</atom:affiliation-city>
+			<atom:affiliation-country>Indonesia</atom:affiliation-country>
+		</atom:affiliation>
+		<prism:aggregationType>Journal</prism:aggregationType>
+		<atom:subtype>re</atom:subtype>
+		<atom:subtypeDescription>Review</atom:subtypeDescription>
+		<atom:source-id>21101088436</atom:source-id>
+		<atom:openaccess>0</atom:openaccess>
+		<atom:openaccessFlag>false</atom:openaccessFlag>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85150073010" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85150073010?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85150073010&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85150073010&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85150073010</prism:url>
+		<dc:identifier>SCOPUS_ID:85150073010</dc:identifier>
+		<atom:eid>2-s2.0-85150073010</atom:eid>
+		<dc:title>Representations of native-speaker teachers among Slovenian secondary school learners</dc:title>
+		<dc:creator>Lamy-Joswiak A.C.</dc:creator>
+		<prism:publicationName>Journal for Foreign Languages</prism:publicationName>
+		<prism:issn>18558453</prism:issn>
+		<prism:eIssn>23504269</prism:eIssn>
+		<prism:volume>11</prism:volume>
+		<prism:issueIdentifier>1</prism:issueIdentifier>
+		<prism:pageRange>229-250</prism:pageRange>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<prism:doi>10.4312/vestnik.11.229-250</prism:doi>
+		<atom:citedby-count>0</atom:citedby-count>
+		<atom:affiliation>
+			<atom:affilname>Univerza v Ljubljani</atom:affilname>
+			<atom:affiliation-city>Ljubljana</atom:affiliation-city>
+			<atom:affiliation-country>Slovenia</atom:affiliation-country>
+		</atom:affiliation>
+		<prism:aggregationType>Journal</prism:aggregationType>
+		<atom:subtype>ar</atom:subtype>
+		<atom:subtypeDescription>Article</atom:subtypeDescription>
+		<atom:source-id>21101071827</atom:source-id>
+		<atom:openaccess>1</atom:openaccess>
+		<atom:openaccessFlag>true</atom:openaccessFlag>
+		<atom:freetoread>
+			<atom:value>all</atom:value>
+			<atom:value>publisherfullgold</atom:value>
+		</atom:freetoread>
+		<atom:freetoreadLabel>
+			<atom:value>All Open Access</atom:value>
+			<atom:value>Gold</atom:value>
+		</atom:freetoreadLabel>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85149140978" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85149140978?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85149140978&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85149140978&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85149140978</prism:url>
+		<dc:identifier>SCOPUS_ID:85149140978</dc:identifier>
+		<atom:eid>2-s2.0-85149140978</atom:eid>
+		<dc:title>EVALUATING THE EMERGENCE OF ELITE PROFESSIONAL GOLFERS IN EUROPE WITH DATA ENVELOPMENT ANALYSIS</dc:title>
+		<dc:creator>Alcaraz J.</dc:creator>
+		<prism:publicationName>European Journal of Human Movement</prism:publicationName>
+		<prism:eIssn>23864095</prism:eIssn>
+		<prism:volume>43</prism:volume>
+		<prism:pageRange>145-166</prism:pageRange>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<atom:citedby-count>0</atom:citedby-count>
+		<atom:affiliation>
+			<atom:affilname>Universidad Miguel Hern�ndez de Elche</atom:affilname>
+			<atom:affiliation-city>Elche</atom:affiliation-city>
+			<atom:affiliation-country>Spain</atom:affiliation-country>
+		</atom:affiliation>
+		<prism:aggregationType>Journal</prism:aggregationType>
+		<atom:subtype>ar</atom:subtype>
+		<atom:subtypeDescription>Article</atom:subtypeDescription>
+		<atom:source-id>21101037316</atom:source-id>
+		<atom:openaccess>0</atom:openaccess>
+		<atom:openaccessFlag>false</atom:openaccessFlag>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85148753524" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85148753524?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85148753524&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85148753524&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85148753524</prism:url>
+		<dc:identifier>SCOPUS_ID:85148753524</dc:identifier>
+		<atom:eid>2-s2.0-85148753524</atom:eid>
+		<dc:title>The Case for Case Studies in the Context of Environmental Issues-Updated</dc:title>
+		<dc:creator>Burns W.</dc:creator>
+		<prism:publicationName>Case Studies in the Environment</prism:publicationName>
+		<prism:eIssn>24739510</prism:eIssn>
+		<prism:volume>3</prism:volume>
+		<prism:issueIdentifier>1</prism:issueIdentifier>
+		<prism:pageRange/>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<prism:doi>10.1525/cse.2019.eic.001</prism:doi>
+		<atom:citedby-count>0</atom:citedby-count>
+		<prism:aggregationType>Journal</prism:aggregationType>
+		<atom:subtype>ed</atom:subtype>
+		<atom:subtypeDescription>Editorial</atom:subtypeDescription>
+		<atom:source-id>21101042191</atom:source-id>
+		<atom:openaccess>0</atom:openaccess>
+		<atom:openaccessFlag>false</atom:openaccessFlag>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85145690719" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85145690719?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85145690719&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85145690719&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85145690719</prism:url>
+		<dc:identifier>SCOPUS_ID:85145690719</dc:identifier>
+		<atom:eid>2-s2.0-85145690719</atom:eid>
+		<dc:title>ENDURANCE ASSESSMENT IN HANDBALL: A SYSTEMATIC REVIEW</dc:title>
+		<dc:creator>Camacho-Cardenosa A.</dc:creator>
+		<prism:publicationName>European Journal of Human Movement</prism:publicationName>
+		<prism:eIssn>23864095</prism:eIssn>
+		<prism:volume>43</prism:volume>
+		<prism:pageRange>13-39</prism:pageRange>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<atom:citedby-count>1</atom:citedby-count>
+		<atom:affiliation>
+			<atom:affilname>Universidad de Extremadura</atom:affilname>
+			<atom:affiliation-city>Badajoz</atom:affiliation-city>
+			<atom:affiliation-country>Spain</atom:affiliation-country>
+		</atom:affiliation>
+		<prism:aggregationType>Journal</prism:aggregationType>
+		<atom:subtype>ar</atom:subtype>
+		<atom:subtypeDescription>Article</atom:subtypeDescription>
+		<atom:source-id>21101037316</atom:source-id>
+		<atom:openaccess>0</atom:openaccess>
+		<atom:openaccessFlag>false</atom:openaccessFlag>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85133571621" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85133571621?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85133571621&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85133571621&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85133571621</prism:url>
+		<dc:identifier>SCOPUS_ID:85133571621</dc:identifier>
+		<atom:eid>2-s2.0-85133571621</atom:eid>
+		<dc:title>The Effect of Blended Learning on Nursing Students� Knowledge</dc:title>
+		<dc:creator>Eka N.G.A.</dc:creator>
+		<prism:publicationName>Jurnal Ners</prism:publicationName>
+		<prism:issn>18583598</prism:issn>
+		<prism:eIssn>25025791</prism:eIssn>
+		<prism:volume>14</prism:volume>
+		<prism:issueIdentifier>3 Special Issue</prism:issueIdentifier>
+		<prism:pageRange>1-4</prism:pageRange>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<prism:doi>10.20473/jn.v14i3(si).16933</prism:doi>
+		<atom:citedby-count>3</atom:citedby-count>
+		<atom:affiliation>
+			<atom:affilname>Universitas Pelita Harapan</atom:affilname>
+			<atom:affiliation-city>Tangerang</atom:affiliation-city>
+			<atom:affiliation-country>Indonesia</atom:affiliation-country>
+		</atom:affiliation>
+		<prism:aggregationType>Journal</prism:aggregationType>
+		<atom:subtype>ar</atom:subtype>
+		<atom:subtypeDescription>Article</atom:subtypeDescription>
+		<atom:source-id>21101088436</atom:source-id>
+		<atom:openaccess>0</atom:openaccess>
+		<atom:openaccessFlag>false</atom:openaccessFlag>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85129239256" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85129239256?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85129239256&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85129239256&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85129239256</prism:url>
+		<dc:identifier>SCOPUS_ID:85129239256</dc:identifier>
+		<atom:eid>2-s2.0-85129239256</atom:eid>
+		<dc:title>Methodology for a Regional Cartography for the Application of the Bioclimatic Strategies of the Givoni Charter</dc:title>
+		<dc:creator>Mart�n F.D.C.</dc:creator>
+		<prism:publicationName>Habitat Sustentable</prism:publicationName>
+		<prism:eIssn>07190700</prism:eIssn>
+		<prism:volume>9</prism:volume>
+		<prism:issueIdentifier>2</prism:issueIdentifier>
+		<prism:pageRange>52-63</prism:pageRange>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<prism:doi>10.22320/07190700.2019.09.02.05</prism:doi>
+		<atom:citedby-count>2</atom:citedby-count>
+		<atom:affiliation>
+			<atom:affilname>Universidad de Alcal�</atom:affilname>
+			<atom:affiliation-city>Alcala de Henares</atom:affiliation-city>
+			<atom:affiliation-country>Spain</atom:affiliation-country>
+		</atom:affiliation>
+		<prism:aggregationType>Journal</prism:aggregationType>
+		<atom:subtype>ar</atom:subtype>
+		<atom:subtypeDescription>Article</atom:subtypeDescription>
+		<atom:source-id>21101018933</atom:source-id>
+		<atom:openaccess>1</atom:openaccess>
+		<atom:openaccessFlag>true</atom:openaccessFlag>
+		<atom:freetoread>
+			<atom:value>all</atom:value>
+			<atom:value>publisherfullgold</atom:value>
+			<atom:value>repository</atom:value>
+			<atom:value>repositoryvor</atom:value>
+			<atom:value>repositoryam</atom:value>
+		</atom:freetoread>
+		<atom:freetoreadLabel>
+			<atom:value>All Open Access</atom:value>
+			<atom:value>Gold</atom:value>
+			<atom:value>Green</atom:value>
+		</atom:freetoreadLabel>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85125729360" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85125729360?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85125729360&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85125729360&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85125729360</prism:url>
+		<dc:identifier>SCOPUS_ID:85125729360</dc:identifier>
+		<atom:eid>2-s2.0-85125729360</atom:eid>
+		<dc:title>Cultural localisation as a strategy to preserve the persuasive function in the translation of tourism websites from French into English</dc:title>
+		<dc:creator>Cowan S.E.</dc:creator>
+		<prism:publicationName>Journal of Internationalization and Localization</prism:publicationName>
+		<prism:issn>20326904</prism:issn>
+		<prism:eIssn>20326912</prism:eIssn>
+		<prism:volume>6</prism:volume>
+		<prism:issueIdentifier>2</prism:issueIdentifier>
+		<prism:pageRange>131-152</prism:pageRange>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<prism:doi>10.1075/jial.20001.cow</prism:doi>
+		<atom:citedby-count>2</atom:citedby-count>
+		<atom:affiliation>
+			<atom:affilname>London Metropolitan University</atom:affilname>
+			<atom:affiliation-city>London</atom:affiliation-city>
+			<atom:affiliation-country>United Kingdom</atom:affiliation-country>
+		</atom:affiliation>
+		<prism:aggregationType>Journal</prism:aggregationType>
+		<atom:subtype>ar</atom:subtype>
+		<atom:subtypeDescription>Article</atom:subtypeDescription>
+		<atom:source-id>21101033946</atom:source-id>
+		<atom:openaccess>0</atom:openaccess>
+		<atom:openaccessFlag>false</atom:openaccessFlag>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85118483926" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85118483926?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85118483926&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85118483926&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85118483926</prism:url>
+		<dc:identifier>SCOPUS_ID:85118483926</dc:identifier>
+		<atom:eid>2-s2.0-85118483926</atom:eid>
+		<dc:title>An analysis of open innovation determinants: The case study of singapore based family owned enterprises</dc:title>
+		<dc:creator>Koh A.</dc:creator>
+		<prism:publicationName>European Journal of Family Business</prism:publicationName>
+		<prism:issn>24448788</prism:issn>
+		<prism:eIssn>2444877X</prism:eIssn>
+		<prism:volume>9</prism:volume>
+		<prism:issueIdentifier>2</prism:issueIdentifier>
+		<prism:pageRange>85-101</prism:pageRange>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<prism:doi>10.24310/ejfbejfb.v9i2.5678</prism:doi>
+		<atom:citedby-count>0</atom:citedby-count>
+		<atom:affiliation>
+			<atom:affilname>Singapore Management University</atom:affilname>
+			<atom:affiliation-city>Singapore City</atom:affiliation-city>
+			<atom:affiliation-country>Singapore</atom:affiliation-country>
+		</atom:affiliation>
+		<atom:affiliation>
+			<atom:affilname>Business families institute</atom:affilname>
+			<atom:affiliation-city>Singapore City</atom:affiliation-city>
+			<atom:affiliation-country>Singapore</atom:affiliation-country>
+		</atom:affiliation>
+		<prism:aggregationType>Journal</prism:aggregationType>
+		<atom:subtype>ar</atom:subtype>
+		<atom:subtypeDescription>Article</atom:subtypeDescription>
+		<atom:source-id>21101064804</atom:source-id>
+		<atom:openaccess>1</atom:openaccess>
+		<atom:openaccessFlag>true</atom:openaccessFlag>
+		<atom:freetoread>
+			<atom:value>all</atom:value>
+			<atom:value>publisherfullgold</atom:value>
+		</atom:freetoread>
+		<atom:freetoreadLabel>
+			<atom:value>All Open Access</atom:value>
+			<atom:value>Gold</atom:value>
+		</atom:freetoreadLabel>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85115217705" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85115217705?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85115217705&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85115217705&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85115217705</prism:url>
+		<dc:identifier>SCOPUS_ID:85115217705</dc:identifier>
+		<atom:eid>2-s2.0-85115217705</atom:eid>
+		<dc:title>Rethinking community in communication and information studies: Digital community and community 'to go'</dc:title>
+		<dc:creator>Chayko M.</dc:creator>
+		<prism:publicationName>Rethinking Community through Transdisciplinary Research</prism:publicationName>
+		<prism:isbn>9783030310738</prism:isbn>
+		<prism:isbn>9783030310721</prism:isbn>
+		<prism:pageRange>99-110</prism:pageRange>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<atom:citedby-count>0</atom:citedby-count>
+		<atom:affiliation>
+			<atom:affilname>Rutgers University�New Brunswick</atom:affilname>
+			<atom:affiliation-city>New Brunswick</atom:affiliation-city>
+			<atom:affiliation-country>United States</atom:affiliation-country>
+		</atom:affiliation>
+		<prism:aggregationType>Book</prism:aggregationType>
+		<atom:subtype>ch</atom:subtype>
+		<atom:subtypeDescription>Book Chapter</atom:subtypeDescription>
+		<atom:source-id>21101059608</atom:source-id>
+		<atom:openaccess>0</atom:openaccess>
+		<atom:openaccessFlag>false</atom:openaccessFlag>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85115208153" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85115208153?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85115208153&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85115208153&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85115208153</prism:url>
+		<dc:identifier>SCOPUS_ID:85115208153</dc:identifier>
+		<atom:eid>2-s2.0-85115208153</atom:eid>
+		<dc:title>Learning in Information-Rich Environments: I-LEARN and the Construction of Knowledge from Information</dc:title>
+		<dc:creator>Neuman D.</dc:creator>
+		<prism:publicationName>Learning in Information-Rich Environments: I-LEARN and the Construction of Knowledge from Information</prism:publicationName>
+		<prism:isbn>9783030294106</prism:isbn>
+		<prism:isbn>9783030294090</prism:isbn>
+		<prism:pageRange>1-217</prism:pageRange>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<prism:doi>10.1007/978-3-030-29410-6</prism:doi>
+		<atom:citedby-count>0</atom:citedby-count>
+		<atom:affiliation>
+			<atom:affilname>Drexel University</atom:affilname>
+			<atom:affiliation-city>Philadelphia</atom:affiliation-city>
+			<atom:affiliation-country>United States</atom:affiliation-country>
+		</atom:affiliation>
+		<prism:aggregationType>Book</prism:aggregationType>
+		<atom:subtype>bk</atom:subtype>
+		<atom:subtypeDescription>Book</atom:subtypeDescription>
+		<atom:source-id>21101059638</atom:source-id>
+		<atom:openaccess>0</atom:openaccess>
+		<atom:openaccessFlag>false</atom:openaccessFlag>
+		<atom:freetoread>
+			<atom:value>all</atom:value>
+			<atom:value>repository</atom:value>
+			<atom:value>repositoryam</atom:value>
+		</atom:freetoread>
+		<atom:freetoreadLabel>
+			<atom:value>All Open Access</atom:value>
+			<atom:value>Green</atom:value>
+		</atom:freetoreadLabel>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85115121421" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85115121421?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85115121421&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85115121421&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85115121421</prism:url>
+		<dc:identifier>SCOPUS_ID:85115121421</dc:identifier>
+		<atom:eid>2-s2.0-85115121421</atom:eid>
+		<dc:title>Information Technology-Based Interventions for Health Care Support in Patients with Chronic Kidney Disease: A Systematic Review</dc:title>
+		<dc:creator>Putri I.R.P.</dc:creator>
+		<prism:publicationName>Jurnal Ners</prism:publicationName>
+		<prism:issn>18583598</prism:issn>
+		<prism:eIssn>25025791</prism:eIssn>
+		<prism:volume>14</prism:volume>
+		<prism:issueIdentifier>3 Special Issue</prism:issueIdentifier>
+		<prism:pageRange>259-265</prism:pageRange>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<prism:doi>10.20473/jn.v14i3(si).17030</prism:doi>
+		<atom:citedby-count>1</atom:citedby-count>
+		<atom:affiliation>
+			<atom:affilname>Universitas Airlangga</atom:affilname>
+			<atom:affiliation-city>Surabaya</atom:affiliation-city>
+			<atom:affiliation-country>Indonesia</atom:affiliation-country>
+		</atom:affiliation>
+		<prism:aggregationType>Journal</prism:aggregationType>
+		<atom:subtype>ar</atom:subtype>
+		<atom:subtypeDescription>Article</atom:subtypeDescription>
+		<atom:source-id>21101088436</atom:source-id>
+		<atom:openaccess>0</atom:openaccess>
+		<atom:openaccessFlag>false</atom:openaccessFlag>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85111215621" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85111215621?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85111215621&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85111215621&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85111215621</prism:url>
+		<dc:identifier>SCOPUS_ID:85111215621</dc:identifier>
+		<atom:eid>2-s2.0-85111215621</atom:eid>
+		<dc:title>Enabling the diffusion of sustainable product innovations in BIM library platforms</dc:title>
+		<dc:creator>Bahrami S.</dc:creator>
+		<prism:publicationName>Journal of Innovation Management</prism:publicationName>
+		<prism:eIssn>21830606</prism:eIssn>
+		<prism:volume>7</prism:volume>
+		<prism:issueIdentifier>4</prism:issueIdentifier>
+		<prism:pageRange>106-130</prism:pageRange>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<prism:doi>10.24840/2183-0606_007.004_0006</prism:doi>
+		<atom:citedby-count>2</atom:citedby-count>
+		<atom:affiliation>
+			<atom:affilname>Lunds Tekniska H�gskola</atom:affilname>
+			<atom:affiliation-city>Lund</atom:affiliation-city>
+			<atom:affiliation-country>Sweden</atom:affiliation-country>
+		</atom:affiliation>
+		<prism:aggregationType>Journal</prism:aggregationType>
+		<atom:subtype>ar</atom:subtype>
+		<atom:subtypeDescription>Article</atom:subtypeDescription>
+		<atom:source-id>21101053537</atom:source-id>
+		<atom:openaccess>1</atom:openaccess>
+		<atom:openaccessFlag>true</atom:openaccessFlag>
+		<atom:freetoread>
+			<atom:value>all</atom:value>
+			<atom:value>publisherfullgold</atom:value>
+		</atom:freetoread>
+		<atom:freetoreadLabel>
+			<atom:value>All Open Access</atom:value>
+			<atom:value>Gold</atom:value>
+		</atom:freetoreadLabel>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85111178857" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85111178857?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85111178857&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85111178857&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85111178857</prism:url>
+		<dc:identifier>SCOPUS_ID:85111178857</dc:identifier>
+		<atom:eid>2-s2.0-85111178857</atom:eid>
+		<dc:title>Success factors for data�driven service delivery networks</dc:title>
+		<dc:creator>Pikkarainen M.</dc:creator>
+		<prism:publicationName>Journal of Innovation Management</prism:publicationName>
+		<prism:eIssn>21830606</prism:eIssn>
+		<prism:volume>7</prism:volume>
+		<prism:issueIdentifier>4</prism:issueIdentifier>
+		<prism:pageRange>14-46</prism:pageRange>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<prism:doi>10.24840/2183-0606_007.004_0003</prism:doi>
+		<atom:citedby-count>4</atom:citedby-count>
+		<atom:affiliation>
+			<atom:affilname>Oulu Business School</atom:affilname>
+			<atom:affiliation-city>Oulu</atom:affiliation-city>
+			<atom:affiliation-country>Finland</atom:affiliation-country>
+		</atom:affiliation>
+		<atom:affiliation>
+			<atom:affilname>Oulun Yliopisto</atom:affilname>
+			<atom:affiliation-city>Oulu</atom:affiliation-city>
+			<atom:affiliation-country>Finland</atom:affiliation-country>
+		</atom:affiliation>
+		<prism:aggregationType>Journal</prism:aggregationType>
+		<atom:subtype>re</atom:subtype>
+		<atom:subtypeDescription>Review</atom:subtypeDescription>
+		<atom:source-id>21101053537</atom:source-id>
+		<atom:openaccess>1</atom:openaccess>
+		<atom:openaccessFlag>true</atom:openaccessFlag>
+		<atom:freetoread>
+			<atom:value>all</atom:value>
+			<atom:value>publisherfullgold</atom:value>
+			<atom:value>repository</atom:value>
+			<atom:value>repositoryam</atom:value>
+		</atom:freetoread>
+		<atom:freetoreadLabel>
+			<atom:value>All Open Access</atom:value>
+			<atom:value>Gold</atom:value>
+			<atom:value>Green</atom:value>
+		</atom:freetoreadLabel>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85106366166" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85106366166?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85106366166&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85106366166&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85106366166</prism:url>
+		<dc:identifier>SCOPUS_ID:85106366166</dc:identifier>
+		<atom:eid>2-s2.0-85106366166</atom:eid>
+		<dc:title>The digital reconstruction of leonardo�s library: Revealing formal patterns in early modern thought</dc:title>
+		<dc:creator>Cirnigliaro G.</dc:creator>
+		<prism:publicationName>Studies in Digital Heritage</prism:publicationName>
+		<prism:eIssn>25741748</prism:eIssn>
+		<prism:volume>3</prism:volume>
+		<prism:issueIdentifier>2</prism:issueIdentifier>
+		<prism:pageRange>128-143</prism:pageRange>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<prism:doi>10.14434/sdh.v3i2.27719</prism:doi>
+		<atom:citedby-count>1</atom:citedby-count>
+		<atom:affiliation>
+			<atom:affilname>Rutgers University�New Brunswick</atom:affilname>
+			<atom:affiliation-city>New Brunswick</atom:affiliation-city>
+			<atom:affiliation-country>United States</atom:affiliation-country>
+		</atom:affiliation>
+		<prism:aggregationType>Journal</prism:aggregationType>
+		<atom:subtype>ar</atom:subtype>
+		<atom:subtypeDescription>Article</atom:subtypeDescription>
+		<atom:source-id>21101046180</atom:source-id>
+		<atom:openaccess>1</atom:openaccess>
+		<atom:openaccessFlag>true</atom:openaccessFlag>
+		<atom:freetoread>
+			<atom:value>all</atom:value>
+			<atom:value>publisherfullgold</atom:value>
+		</atom:freetoread>
+		<atom:freetoreadLabel>
+			<atom:value>All Open Access</atom:value>
+			<atom:value>Gold</atom:value>
+		</atom:freetoreadLabel>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85106349753" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85106349753?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85106349753&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85106349753&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85106349753</prism:url>
+		<dc:identifier>SCOPUS_ID:85106349753</dc:identifier>
+		<atom:eid>2-s2.0-85106349753</atom:eid>
+		<dc:title>The digital platform of D.I.R.A.A.S. (UNIGE): An informatic application for the history of art criticism and photography</dc:title>
+		<dc:creator>Massarente M.</dc:creator>
+		<prism:publicationName>Studies in Digital Heritage</prism:publicationName>
+		<prism:eIssn>25741748</prism:eIssn>
+		<prism:volume>3</prism:volume>
+		<prism:issueIdentifier>2</prism:issueIdentifier>
+		<prism:pageRange>156-169</prism:pageRange>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<prism:doi>10.14434/sdh.v3i2.27441</prism:doi>
+		<atom:citedby-count>0</atom:citedby-count>
+		<atom:affiliation>
+			<atom:affilname>Universit� degli Studi di Genova</atom:affilname>
+			<atom:affiliation-city>Genoa</atom:affiliation-city>
+			<atom:affiliation-country>Italy</atom:affiliation-country>
+		</atom:affiliation>
+		<prism:aggregationType>Journal</prism:aggregationType>
+		<atom:subtype>ar</atom:subtype>
+		<atom:subtypeDescription>Article</atom:subtypeDescription>
+		<atom:source-id>21101046180</atom:source-id>
+		<atom:openaccess>1</atom:openaccess>
+		<atom:openaccessFlag>true</atom:openaccessFlag>
+		<atom:freetoread>
+			<atom:value>all</atom:value>
+			<atom:value>publisherfullgold</atom:value>
+		</atom:freetoread>
+		<atom:freetoreadLabel>
+			<atom:value>All Open Access</atom:value>
+			<atom:value>Gold</atom:value>
+		</atom:freetoreadLabel>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85104199903" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85104199903?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85104199903&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85104199903&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85104199903</prism:url>
+		<dc:identifier>SCOPUS_ID:85104199903</dc:identifier>
+		<atom:eid>2-s2.0-85104199903</atom:eid>
+		<dc:title>The case for case studies in the context of environmental issues-updated</dc:title>
+		<dc:creator>Burns W.</dc:creator>
+		<prism:publicationName>Case Studies in the Environment</prism:publicationName>
+		<prism:eIssn>24739510</prism:eIssn>
+		<prism:volume>3</prism:volume>
+		<prism:issueIdentifier>1</prism:issueIdentifier>
+		<prism:pageRange/>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<prism:doi>10.1525/cse.2019.EIC-001</prism:doi>
+		<atom:citedby-count>1</atom:citedby-count>
+		<prism:aggregationType>Journal</prism:aggregationType>
+		<atom:subtype>ed</atom:subtype>
+		<atom:subtypeDescription>Editorial</atom:subtypeDescription>
+		<atom:source-id>21101042191</atom:source-id>
+		<atom:openaccess>0</atom:openaccess>
+		<atom:openaccessFlag>false</atom:openaccessFlag>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85104191635" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85104191635?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85104191635&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85104191635&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85104191635</prism:url>
+		<dc:identifier>SCOPUS_ID:85104191635</dc:identifier>
+		<atom:eid>2-s2.0-85104191635</atom:eid>
+		<dc:title>Ignoring quantitative reasoning: The initial estimates of the size of the deepwater horizon oil spill of 2010 and the failure of science in properly shaping the policy response</dc:title>
+		<dc:creator>Bothun G.D.</dc:creator>
+		<prism:publicationName>Case Studies in the Environment</prism:publicationName>
+		<prism:eIssn>24739510</prism:eIssn>
+		<prism:volume>3</prism:volume>
+		<prism:issueIdentifier>1</prism:issueIdentifier>
+		<prism:pageRange/>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<prism:doi>10.1525/cse.2018.001578</prism:doi>
+		<atom:citedby-count>0</atom:citedby-count>
+		<atom:affiliation>
+			<atom:affilname>University of Oregon</atom:affilname>
+			<atom:affiliation-city>Eugene</atom:affiliation-city>
+			<atom:affiliation-country>United States</atom:affiliation-country>
+		</atom:affiliation>
+		<prism:aggregationType>Journal</prism:aggregationType>
+		<atom:subtype>ar</atom:subtype>
+		<atom:subtypeDescription>Article</atom:subtypeDescription>
+		<atom:source-id>21101042191</atom:source-id>
+		<atom:openaccess>0</atom:openaccess>
+		<atom:openaccessFlag>false</atom:openaccessFlag>
+	</atom:entry>
+	<atom:entry>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85104191155" ref="self"/>
+		<atom:link href="https://api.elsevier.com/content/abstract/scopus_id/85104191155?field=author,affiliation" ref="author-affiliation"/>
+		<atom:link href="https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&amp;scp=85104191155&amp;origin=inward" ref="scopus"/>
+		<atom:link href="https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&amp;scp=85104191155&amp;origin=inward" ref="scopus-citedby"/>
+		<prism:url>https://api.elsevier.com/content/abstract/scopus_id/85104191155</prism:url>
+		<dc:identifier>SCOPUS_ID:85104191155</dc:identifier>
+		<atom:eid>2-s2.0-85104191155</atom:eid>
+		<dc:title>Planning, conservation, and education in the Pinelands National Reserve</dc:title>
+		<dc:creator>Moscovici D.</dc:creator>
+		<prism:publicationName>Case Studies in the Environment</prism:publicationName>
+		<prism:eIssn>24739510</prism:eIssn>
+		<prism:volume>3</prism:volume>
+		<prism:issueIdentifier>1</prism:issueIdentifier>
+		<prism:pageRange/>
+		<prism:coverDate>2019-12-31</prism:coverDate>
+		<prism:coverDisplayDate>31 December 2019</prism:coverDisplayDate>
+		<prism:doi>10.1525/cse.2019.001941</prism:doi>
+		<atom:citedby-count>1</atom:citedby-count>
+		<atom:affiliation>
+			<atom:affilname>Stockton University</atom:affilname>
+			<atom:affiliation-city>Galloway Township</atom:affiliation-city>
+			<atom:affiliation-country>United States</atom:affiliation-country>
+		</atom:affiliation>
+		<prism:aggregationType>Journal</prism:aggregationType>
+		<atom:subtype>ar</atom:subtype>
+		<atom:subtypeDescription>Article</atom:subtypeDescription>
+		<atom:source-id>21101042191</atom:source-id>
+		<atom:openaccess>0</atom:openaccess>
+		<atom:openaccessFlag>false</atom:openaccessFlag>
+	</atom:entry>
+</atom:search-results>

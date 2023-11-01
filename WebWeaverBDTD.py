@@ -30,33 +30,39 @@ def ww_bdtd(query, query_type, query_date, query_id):
     # Send an HTTP GET request to the API and store the response
     response = requests.get(url)
 
-    # Parse the HTML content of the response using BeautifulSoup
-    soup = BeautifulSoup(response.content, 'html.parser')
+    # Check if the request was successful
+    if response.status_code == 200:
+        # Parse the HTML content of the response using BeautifulSoup
+        soup = BeautifulSoup(response.content, 'html.parser')
 
-    # Use regular expression to find and extract the total number of results
-    total = re.search(r'\d+', response.text)
+        # Use regular expression to find and extract the total number of results
+        total = re.search(r'\d+', response.text)
+        total = total.group()
 
-    if total.group() != "0":
-        # Parse the JSON data from the response
-        data = response.json()
+        if total != "0":
+            # Parse the JSON data from the response
+            data = response.json()
 
-        # Extract the list of records from the JSON data
-        records = data.get("records", [])
+            # Extract the list of records from the JSON data
+            records = data.get("records", [])
 
-        # Create an empty list to store the adapted records
-        adapted_records = []
+            # Create an empty list to store the adapted records
+            adapted_records = []
 
-        # Loop through each original record and adapt it
-        for record in records:
-            adapted_record = adapt_record(record)
-            adapted_records.append(adapted_record)
+            # Loop through each original record and adapt it
+            for record in records:
+                adapted_record = adapt_record(record)
+                adapted_records.append(adapted_record)
 
-        # Call the function to save the data to MongoDB
-        save(adapted_records, query, query_date, query_id, total.group(), "bdtd")
+            # Call the function to save the data to MongoDB
+            save(adapted_records, query, query_date, query_id, total, "bdtd")
+        else:
+            print("Nenhum resultado na BDTD para a consulta em questão.")
     else:
-        print("Nenhum resultado na BDTD para a consulta em questão.")
+        total = 0
+        print("A requisição enviada à BDTD não foi atendida.")
 
-    return total.group()
+    return total
 
 
 # Function to adapt individual 'record' elements from JSON to a dictionary
