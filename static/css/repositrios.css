@@ -191,7 +191,7 @@
     padding-right:var(--dl-space-space-twounits);
     padding-bottom:var(--dl-space-space-unit);
     text-decoration:none;
-    background-color:var(--dl-color-gray-black)
+    background-color: #0f3f47;
 }
 .repositrios-link:hover{
     transform:scale(1.02)
@@ -233,7 +233,7 @@
     padding-right:var(--dl-space-space-twounits);
     padding-bottom:var(--dl-space-space-unit);
     text-decoration:none;
-    background-color:var(--dl-color-gray-black)
+    background-color: #0f3f47;s
 }
 .repositrios-link1:hover{
     transform:scale(1.02)
@@ -275,7 +275,7 @@
     padding-right:var(--dl-space-space-twounits);
     padding-bottom:var(--dl-space-space-unit);
     text-decoration:none;
-    background-color:var(--dl-color-gray-black)
+    background-color: #0f3f47;
 }
 .repositrios-link2:hover{
     transform:scale(1.02)

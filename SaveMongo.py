@@ -28,6 +28,9 @@ def save(data_list, query, query_date, query_id, total, database):
                 repository = 'BDTD'
 
         # Exibe uma mensagem indicando o número de itens inseridos.
-        print(f"{len(data_list)} de {total} itens disponíveis em {repository} foram inseridos no MongoDB.")
+        if total == '1':
+            print(f"{len(data_list)} de {total} item disponível em {repository} foi inserido no MongoDB.")
+        else:
+            print(f"{len(data_list)} de {total} itens disponíveis em {repository} foram inseridos no MongoDB.")
     else:
         print(f"Não foi possível inserir os dados no MongoDB.")

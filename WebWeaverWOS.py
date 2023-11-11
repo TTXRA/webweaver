@@ -59,7 +59,7 @@ def ww_wos(query, query_type, query_date, query_id):
                 adapted_hits.append(adapted_hit)
 
             # Call the function to save the data to MongoDB
-            save(adapted_hits, query, query_date, query_id, totalP, "wos")
+            save(adapted_hits, query, query_date, query_id, total, "wos")
         else:
             print("Nenhum resultado no Web of Science para a consulta em questão.")
     else:
