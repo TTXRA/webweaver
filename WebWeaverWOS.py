@@ -31,7 +31,7 @@ def ww_wos(query, query_type, query_date, query_id):
 
     # Define the headers for the HTTP request
     headers = {
-        "X-ApiKey": "75982a59b8cf5595cf4d74c231af3b82e65625cc"
+        "X-ApiKey": ""
     }
 
     # Send an HTTP GET request to the API

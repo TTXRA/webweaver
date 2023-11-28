@@ -28,8 +28,8 @@ def ww_els(query, query_type, query_date, query_id):
     # Define HTTP request headers with API key and institutional token
     header = {
         "Accept": "application/xml",
-        "X-ELS-APIKey": "9589b3fbd9c2dc9ae80c650da5b29fdf",
-        "X-ELS-Insttoken": "721db35f2394414657e9c7e9bd9e4695"
+        "X-ELS-APIKey": "",
+        "X-ELS-Insttoken": ""
     }
 
     # Send an HTTP GET request to the API
